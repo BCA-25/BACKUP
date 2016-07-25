@@ -2,7 +2,8 @@
 #include<ctype.h>
 
 int main()
-{
+{	
+	printf("Program to check type of Character.\n");
 	char c;
 	printf("Enter a Character:\n");
 	scanf("%c",&c);

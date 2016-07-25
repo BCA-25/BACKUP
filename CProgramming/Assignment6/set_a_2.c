@@ -2,10 +2,11 @@
 #include<stdlib.h>
 #include<math.h>
 int main()
-{
+{	
+	printf("Menu-driven Program to perform operations\n");
 	int choice;
 	do{
-		printf("1. Sine\n2. Cosine\n3.Log\n4. e^x\n5. Square Root\n6. Exit\nEnter option number:\n");
+		printf("1. Sine\n2. Cosine\n3. Log\n4. e^x\n5. Square Root\n6. Exit\nEnter option number:\n");
 		scanf("%d", &choice);
 		switch(choice)
 		{
