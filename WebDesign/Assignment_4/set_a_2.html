@@ -3,46 +3,21 @@
 	<head>
 		<title>User Form</title>
 	</head>
-	<body>
-		<h1 align="center">User Personal Information</h1>
-		<hr>
-		<form id="createaccount" action="/signup" method="post">
-		<h2>Create New Account</h2><br><br>
-		<label for="firstname" size="25">First Name:</label>
-		<input type="text" id="firstname" name="firstname" autofocus="true"></input><br><br>
-		<label for="lastname">Last Name:</label>
-		<input type="text" id="lastname" name="lastname" ></input><br><br>
-		<label for="gender">Gender:</label>
-		<input type="radio" id="gender" value="male" name="gender" checked>Male</input> 
-		<input type="radio" id="gender" value="female" name="gender" >Female</input><br><br>
-		<label for="age">Age:</label>
-		<input type="number" min="1" max="100" id="age" name="age"></input><br><br>
-		<label for="bday">Birthday:</label>
-		<input type="date" id="bday" name="bday"></input><br><br>
-		<label for="country">Country:</label>
-		<select name="country" size="1">
-		<option>USA</option>
-		<option selected>-Select-</option>
-		<option >India</option>
-		<option>UK</option>
-		<option>Brazil</option>
-		<option>Japan</option>
-		<option>China</option>
-		<option>Russia</option>
-		</select> 
-		<datalist id="countries">
-			<option  value="USA">
-			<option  value="India">
-		</datalist><br><br>
-		<label for="games">Favourite Games:</label>
-		<input type="checkbox" id="game1" name="games" value="game1" checked>Chess</input>
-		<input type="checkbox" id="game2" name="games" value="game2">Checkers</input>
-		<input type="checkbox" id="game3" name="games" value="game3">Pockers</input><br><br>
-		<label for="color">Favourite Color:</label>
-		<input type="text" id="color" name="color"></input><br><br>
-		<label for="textbox">Comments:</label>
-		<textarea id="textbox" name="Comments" rows="10" cols="40"></textarea><br><br>
-		<input type="submit" name="submit" value="Sign Up">
+	<body style="background-color:Yellow; color:Red; font-size:16pt;">
+		<form id="f1">
+		<label for="firstname" size="16">Enter Your Name</label>
+		<input style="margin-left:100px;" type="text" id="firstname" name="firstname" autofocus="true"></input><br><br>
+		<label for="pass">Enter Your Password</label>
+		<input style="margin-left:60px;" type="password" id="pass" name="pass" ></input><br><br>
+		<label for="os">Which of the Following Operating System have you used?</label><br><br>
+		<input type="checkbox" id="LIN" name="UOS" value="LIN" checked></input><label for="LIN">LINUX</label> 
+		<input type="checkbox" id="WIN" name="UOS" value="WIN" checked></input><label for="WIN">Windows XP</label>
+		<input type="checkbox" id="MAC" name="UOS" value="MAC"></input><label for="MAC">Machintosh 8.0</label><br><br>
+		<label for="likeos">Which Operating System do you like the best?</label><br><br>
+		<input type="radio" id="LIN1" value="LIN" name="likeos" ></input><label for="LIN1">LINUX</label> 
+		<input type="radio" id="WIN2" value="WIN" name="likeos" checked></input><label for="WIN2">Windows XP</label> 
+		<input type="radio" id="MAC3" value="MAC" name="likeos"></input><label for="MAC3">Machintosh 8.0</label> <br><br>
+		<label for="submit">You have Completed the Form.</label>  <input style="margin-left:30px;"type="submit" name="submit" value="Submit"><br><br>
 		</form>
 	</body>
 </html>
