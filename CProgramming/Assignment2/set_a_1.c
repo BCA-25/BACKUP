@@ -2,7 +2,7 @@
 
 int main()
 {	
-	printf("Program to display the greatest of the given nos\n");
+	printf("Program to dispplay if entered no is odd or even.\n");
 	int x;
 	printf("Enter the Number: \n");
 	scanf("%d", &x);

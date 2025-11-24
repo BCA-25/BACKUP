@@ -2,6 +2,7 @@
 
 int main()
 {
+	printf("Program to swap two numbers w/ third variable\n");	
 	int a, b, c;
 	printf("Enter the First Number:\n");
 	scanf("%d", &a);

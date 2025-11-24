@@ -2,7 +2,7 @@
 
 int main()
 {	
-	printf("Program to display income tax:\n");
+	printf("Program to display Income Tax:\n");
 	float x,Tax;
 	printf("Enter Basic Salary: \n");
 	scanf("%f", &x);

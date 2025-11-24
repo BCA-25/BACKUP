@@ -2,7 +2,7 @@
 
 int main()
 {	
-	printf("Program to display if character is vowel or consonant\n");
+	printf("Program to display if character is Vowel or Consonant\n");
 	char ch;
 	printf("Enter a Character: \n");
 	scanf("%c", &ch);
