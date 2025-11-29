@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h1 align="center">Feedback Form</h1>
-		<form id="f1">
+		<form id="f1" action="/signup" method="post">
 		<center><label for="firstname" size="25">Student Name</label>
 		<input type="text" id="studentname" name="studentname" placeholder="S. Nageswara Rao" autofocus="true"></input><br><br>
 		<label for="studentemail">Student E-Mail</label>
@@ -23,7 +23,7 @@
 		<input type="radio" id="excel" value="4" name="rate" checked></input><label for="excel">Excellent</label> <br><br>
 		<label for="textbox">Suggestions for the betterment of faculty and institute</label><br><br>
 		<textarea id="textbox" name="Comments" rows="10" cols="60" style="text-align:right;">Nice to be here. If given more days for training, it is good.</textarea><br><br>
-		<input type="submit" name="submit" value="Send"> <input type="button" name="clear" value="Clear"><br><br>
+		<input type="submit" name="submit" value="Send"> <input type="button" name="reset" value="Clear"><br><br>
 		</form></center>
 	</body>
 </html>

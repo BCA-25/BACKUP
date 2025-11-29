@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Family Members</title>
+		<style>
+			body {
+				background-color: SkyBlue;
+			}
+			.list {
+				height: 50%;
+				width: 	50%;
+				margin: auto;
+				padding:10px 10px;
+				background-color: White;
+			}
+			
+			#heading {
+				display: inline-block;
+				width: auto;
+				height: auto;
+				font-family: New Times Roman;
+				padding: 10px;
+				font-size: 40px;
+				margin: auto;
+			}
+			
+			#tag {
+				display: inline-block;
+				width: auto;
+				height: auto;
+				background-color: Red;
+				padding: 5px;
+				color: White;
+				font-weight: 600;
+				font-size: 12px;
+				margin: auto;
+
+			}
+			#sub-head {
+				color: Grey;
+				padding: 10px;
+				height: auto;
+				margin: auto;
+			}
+			
+			.chckbox{
+				color: Blue;
+			}
+			
+			input[type="checkbox"]:checked + label {
+				text-decoration: linethrough;
+			}
+			
+				
+		</style>
+
+	</head>
+	<body>
+		<div class="list">
+			<div class="head">
+				<h1 id="heading">Team Meeting</h1><p id="tag">checklist</p>
+				<p id="sub-head" >04/01/2020 ML -1321</p>
+			</div>
+			<div class="checklist">
+				<ul type="none">
+					<li><input type="checkbox" id="ck1"/><label for="ck1">Task List and Assignments</label></li>
+					<li><input type="checkbox" id="ck2"/><label for="ck2">Task List and Assignments</label></li>
+					<li><input type="checkbox" id="ck3"/><label for="ck3">Task List and Assignments</label></li>
+					<li><input type="checkbox" id="ck4"/><label for="ck4">Task List and Assignments</label></li>
+				</ul>
+			</div>
+			<div class="footer">
+			</div>
+
+		</div>
+	</body>
+</html>
