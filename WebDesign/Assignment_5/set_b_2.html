@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Family Members</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<style>
+			#form {
+				font-family: Roboto; 
+				width: 	50%;
+				margin: auto;
+				padding:10px 10px;
+				background-color: White;
+			}
+			#title {
+				font-family: Roboto; 
+				font-size:20pt; 
+				font-weight: lighter;
+			}
+			#uname {
+				width: 83.5%;
+			}
+			#fname {
+				width: 40%;
+			}
+			#lname {
+				width: 40%;
+			}
+			#pass {
+				width: 37%;
+			}
+			#cpass {
+				width: 37%;
+			}
+			#submit {
+				margin-left: 55%;
+				background-color:  #4285F4;
+				color: white;
+				border-radius: 10px;
+				padding:10px 35px;
+				border: blue;
+			}	
+			a {
+				text-decoration: none;
+				color:  #4285F4;
+			}
+			#icon {
+				margin-left: 5px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="form">
+			<img src="set_b_2.png" alt="google"><br>
+			<h1 id="title" > Create your Google Account</h1>
+			<form action="/signup" method="post">
+				<input type="text" id="fname" placeholder="First name"> <input type="text" id="lname" placeholder="Last name"><br><br>
+				<input type="text" id="uname" placeholder="Username">
+				<p>You can use letters, numbers & periods</p>
+				<a href="about:blank">Use my current email address instead</a><br><br>
+				<input type="password" id="pass" placeholder="Password"> <input type="password" id="cpass" placeholder="Confirm"><img src="set_b_2_2.png" id="icon" alt="hide Pass" width="25px" height="25px" ><br>
+				<p>Use 8 or more characters with a mix of letters, numbers & symbols.</p><br>
+				<a href="about:blank" id="signin">Sign in instead</a> <input type="submit" id="submit" value="Next">
+			
+			
+			</form> 
+		</div>
+	</body>
+</html>
