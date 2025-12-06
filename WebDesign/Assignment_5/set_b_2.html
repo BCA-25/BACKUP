@@ -1,38 +1,48 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Family Members</title>
+		<title>Google Login</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 		<style>
+			span {
+				margin: -2px;
+			}
+			#logo{
+				font-size: 45px; 
+				padding: 0px;
+				margin: 0px;
+			}
 			#form {
 				font-family: Roboto; 
-				width: 	50%;
+				width: 	32%;
 				margin: auto;
 				padding:10px 10px;
 				background-color: White;
+				border: 2px solid black;
+				padding: -10px;
 			}
 			#title {
 				font-family: Roboto; 
 				font-size:20pt; 
-				font-weight: lighter;
+				font-weight: lighter;	
 			}
 			#uname {
-				width: 83.5%;
+				width: 95%;
 			}
 			#fname {
-				width: 40%;
+				width: 45%;
 			}
 			#lname {
-				width: 40%;
+				width: 45%;
 			}
 			#pass {
-				width: 37%;
+				width: 40%;
 			}
 			#cpass {
-				width: 37%;
+				width: 40%;
 			}
 			#submit {
-				margin-left: 55%;
+				margin-left: 50%;
 				background-color:  #4285F4;
 				color: white;
 				border-radius: 10px;
@@ -46,20 +56,41 @@
 			#icon {
 				margin-left: 5px;
 			}
+			
+			#usetext1{
+				font-size: 14px;
+			}
+			#usetext2{
+				font-size: 14px;
+				padding-right: 25px;
+			}
+			#hide {
+				margin-left: 4px;
+				background-image:url(/home/cslogin/bcafy2/WebDesign/Assignment_5/set_b_2_2.png);
+				background-size: contain;
+				width: 7%;
+				height: 30px;
+				border-radius: 50%
+				background-color: white;
+				border: white;
+				background-repeat: no-repeat; 
+				background-position: center;
+				
+			}
 		</style>
 
 	</head>
 	<body>
 		<div id="form">
-			<img src="set_b_2.png" alt="google"><br>
+			<p id="logo"><span style="color: #4285F4;">G</span><span style="color: #DB4437;">o</span><span style="color:  #F4B400;">o</span><span style="color: #4285F4;">g</span><span style="color: #0F9D58;">l</span><span style="color: #DB4437;">e</span></p>
 			<h1 id="title" > Create your Google Account</h1>
 			<form action="/signup" method="post">
 				<input type="text" id="fname" placeholder="First name"> <input type="text" id="lname" placeholder="Last name"><br><br>
 				<input type="text" id="uname" placeholder="Username">
-				<p>You can use letters, numbers & periods</p>
+				<p id="usetext1">You can use letters, numbers & periods</p>
 				<a href="about:blank">Use my current email address instead</a><br><br>
-				<input type="password" id="pass" placeholder="Password"> <input type="password" id="cpass" placeholder="Confirm"><img src="set_b_2_2.png" id="icon" alt="hide Pass" width="25px" height="25px" ><br>
-				<p>Use 8 or more characters with a mix of letters, numbers & symbols.</p><br>
+				<input type="password" id="pass" placeholder="Password"> <input type="password" id="cpass" placeholder="Confirm"> <input type="button" id="hide">
+				<p id="usetext2">Use 8 or more characters with a mix of letters, numbers & symbols.</p><br>
 				<a href="about:blank" id="signin">Sign in instead</a> <input type="submit" id="submit" value="Next">
 			
 			
