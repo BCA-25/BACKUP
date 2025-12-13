@@ -2,22 +2,34 @@
 
 int main()
 {
-	printf("Program to print Fibbonacci Sequence\n");
-	int n,c, a = 0, b=1;
-	printf("Enter the number of elements to print\n");
-	scanf("%d",&n);
-	printf("Printing first %d elements of Fibbonacci Sequence:\n",n);
-	printf("%d %d ", a , b);
-	for(int i = 3; i <= n ;i++)
+	printf("Program to print prime numbers between the given numbers.\n");
+	int low, high;
+	printf("Enter the Numbers:\n");
+	scanf("%d %d", &low , &high);
+	int prime= 1;
+	printf("Printing the Numbers:\n");
+	while(low <= high)
 	{	
-		c = a + b;
-		printf("%d ",c);
-		a = b;
-		b = c;
+		for(int i = 2; i<low; i++)
+		{	
+			if(low % i == 0)
+			{
+				prime = 0;
 
+			}
+		}
+		if(prime && low != 1)
+		{	
+			printf("%d ", low);
+		}
+		prime = 1;
+		low++;
+		
+		
 	}
 	printf("\n");
 	
+		
 	
 	return 0;
 }

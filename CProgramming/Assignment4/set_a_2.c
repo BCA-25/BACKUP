@@ -5,7 +5,7 @@ int main()
 	printf("Program to display sum of integers in the given range\n");
 	int x,y;
 	printf("Enter the Integers:\n");
-	scanf("%d,%d",&x, &y);
+	scanf("%d %d",&x, &y);
 	int i;
 	int j;
 	if(x > y)

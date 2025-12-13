@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Program to reverse enterd number \n");
+	printf("Program to reverse entered number \n");
 	int n;
 	printf("Enter the Number:\n");
 	scanf("%d",&n);

@@ -10,7 +10,6 @@ int main()
 	scanf("%d",&n);
 	int i = 1;
 	int sum = x;
-	printf("Printing the Integers\n");
 	while(i < n)
 	{
 		sum *= x;
