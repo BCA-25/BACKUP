@@ -1,14 +1,27 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE html>
 <html>
 	<head>
-		<title>Factorial</title>
 		<script>
-			var num=prompt("Enter Number:");
-			var factorial=num!;
-			document.write("Factorial is " + factorial);
+		function myFunction() {
+			let num, fac;
+			fac = 1;
+			num = document.getElementById("num").value ;
+			for (let i = 1; i <= num; i++) {
+  				fac *= i;
+  			}
+  			document.getElementById('demo').innerHTML = fac;
+		}
 		</script>
 	</head>
 	<body>
+		<form>
+			<label for="num">Enter a number:</label><input type="number" id="num">
+		</form>
 		
+		<p id="demo"></p>
+		<button type="button" onclick="myFunction()">Find Factorial</button>
+
 	</body>
 </html>
+
+

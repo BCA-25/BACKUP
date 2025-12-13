@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myFunction() {
+				let num, sum;
+				sum = 0;
+				num = document.getElementById("num").value ;
+				for (let i = 1; i < num; i++) {
+	  				if(num % i === 0){
+						sum += i;
+					}
+	  			}
+				if(num == sum) {
+					document.getElementById('demo').innerHTML = num + " is a perfect number";
+				} else {
+				 document.getElementById('demo').innerHTML = num + " is not a perfect number";
+				}	
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="num">Enter a number:</label><input type="number" id="num">
+		</form>
+		<p id="demo"></p>
+		<button type="button" onclick="myFunction()">Check if it is a perfect number</button>
+
+	</body>
+</html>
+
+
