@@ -7,7 +7,7 @@ int main()
 	printf("Enter the Number:\n");
 	scanf("%d",&n);
 	int o = n;
-	int rev;
+	int rev = 0;
 	while(o != 0 )
 	{
 		rev = (rev*10 + o%10); 
