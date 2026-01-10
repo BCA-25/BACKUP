@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disable/Enable</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/home/cslogin/bcafy2/bootstrap/css/bootstrap.min.css">
+		<script src="/home/cslogin/bcafy2/bootstrap/jquery/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#dbutton").click(function(){
+					$("#scbutton").prop("disabled", true);
+				});
+				$("#ebutton").click(function(){
+					$("#scbutton").prop("disabled", false);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+		<center><button type="submit" id="scbutton" class="btn btn-primary">Submit</button></center>
+		<button  id="dbutton" class="btn btn-primary">Disable Submit</button>
+		<button  id="ebutton" class="btn btn-primary">Enable Submit</button>
+	</body>
+</html>
