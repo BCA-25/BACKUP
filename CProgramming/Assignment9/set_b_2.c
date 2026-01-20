@@ -7,7 +7,7 @@ int main()
 	printf("Write a program to print user accepted sorted array.\n");
 	printf("Enter Number of Values:\n");
 	scanf("%d", &i);
-	int arr[i - 1];
+	int arr[i];
 	printf("%d values to store:\n", i); 
 	for(int n = 0;n < i; n++)
 	{
@@ -16,7 +16,7 @@ int main()
 	}
 	for(int m = 0; m < i - 1; m++)
 	{
-		for(int n = 0;n < i - 1; n++)
+		for(int n = 0;n < i  - m - 1; n++)
 		{
 			if(arr[n] > arr[n + 1])
 			{
